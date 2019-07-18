@@ -3,8 +3,8 @@ import { jsx } from "@emotion/core"
 const mq = `@media (max-width: 40em)`
 
 const Box = props => {
-  const { height, width, mb, background, expand = true } = props
-  const mqPartial = expand
+  const { height, width, mb, background, responsive = false } = props
+  const mqPartial = responsive
     ? {
         [mq]: {
           width: "100%",
