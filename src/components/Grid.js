@@ -28,8 +28,8 @@ const Grid = props => {
         ...gapPartial,
       }}
     >
-      {Array.from(Array(columns * rows)).map(() => (
-        <Box height={boxHeight} width="100%" mb="0" />
+      {Array.from(Array(columns * rows)).map((e, i) => (
+        <Box key={i} height={boxHeight} width="100%" mb="0" />
       ))}
     </div>
   )
