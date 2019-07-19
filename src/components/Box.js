@@ -1,6 +1,5 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
-const mq = `@media (max-width: 40em)`
+import React from "react"
+const mq = `@media (maxWidth: 40em)`
 
 const Box = props => {
   const { height, width, mb, background, responsive = false } = props
@@ -14,7 +13,7 @@ const Box = props => {
 
   return (
     <div
-      css={{
+      style={{
         background: background || "gainsboro",
         width: width || "100%",
         height: height || 200,
@@ -22,7 +21,6 @@ const Box = props => {
         marginBottom: mb || 20,
         ...mqPartial,
       }}
-      {...props}
     />
   )
 }

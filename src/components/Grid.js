@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 
 const Grid = props => {
@@ -22,7 +21,7 @@ const Grid = props => {
 
   return (
     <div
-      css={{
+      style={{
         display: "grid",
         gridTemplateColumns: columnPartial,
         ...gapPartial,

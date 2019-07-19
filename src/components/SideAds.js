@@ -1,9 +1,8 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 
 const SideAds = props => {
-  const { count = 3, marginBottom = 40 } = props
+  const { count = 2, marginBottom = 40 } = props
   const sizes = [200, 250, 600]
 
   return Array.from(Array(count), (e, i) => {

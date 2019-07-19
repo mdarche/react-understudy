@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 import Paragraph from "./Paragraph"
 
@@ -12,7 +11,7 @@ const BlogPost = props => {
       <Box height={image ? 80 : 100} width={"78%"} responsive />
       <Box
         height={image ? 45 : 55}
-        width={"40%"}
+        width="40%"
         mb={image ? 50 : 70}
         responsive
       />

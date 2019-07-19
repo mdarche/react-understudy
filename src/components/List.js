@@ -1,12 +1,11 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 
 const List = props => {
   const { border = true, padding, margin, count = 10 } = props
   return (
     <ul
-      css={{
+      style={{
         margin: margin || 0,
         padding: 0,
         listStyleType: "none",
@@ -15,7 +14,7 @@ const List = props => {
       {Array.from(Array(count), (e, i) => (
         <li
           key={i}
-          css={{
+          style={{
             borderBottom: border ? "1px solid gainsboro" : false,
             padding,
           }}
