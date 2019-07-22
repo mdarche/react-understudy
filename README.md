@@ -1,6 +1,6 @@
 # React Understudy
 
-React Understudy is a lightweight library of placeholder components for building fast, interactive wireframes.
+React Understudy is a lightweight library of placeholder components for building fast, flexible wireframes.
 
 ## Installation
 
@@ -9,13 +9,13 @@ Understudy is available as an npm package:
 ### npm
 
 ```bash
-npm install --save foobar
+npm install --save react-understudy
 ```
 
 ### Yarn
 
 ```bash
-yarn add foobar
+yarn add react-understudy
 ```
 
 ## Component Library
