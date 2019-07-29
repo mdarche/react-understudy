@@ -1,4 +1,5 @@
-import React from "react"
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import Box from "./Box"
 
 const Grid = props => {
@@ -7,12 +8,13 @@ const Grid = props => {
     columns = 4,
     gap = [20, 20],
     fluid = false,
-    boxWidth = 200,
-    boxHeight = 200,
+    width = 200,
+    height = 200,
+    count,
   } = props
 
   const columnPartial = fluid
-    ? `repeat(auto-fill, minmax(${boxWidth}px, 1fr))`
+    ? `repeat(auto-fill, minmax(${width}px, 1fr))`
     : `repeat( ${columns},1fr)`
 
   const gapPartial = Array.isArray(gap)
@@ -27,8 +29,8 @@ const Grid = props => {
         ...gapPartial,
       }}
     >
-      {Array.from(Array(columns * rows)).map((e, i) => (
-        <Box key={i} height={boxHeight} width="100%" mb="0" />
+      {Array.from(Array(count ? count : columns * rows)).map((e, i) => (
+        <Box key={i} height={height} width={width} mb="0" />
       ))}
     </div>
   )
