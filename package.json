@@ -1,7 +1,7 @@
 {
   "name": "react-understudy",
   "version": "0.0.3",
-  "description": "A flexible, elegant set of placeholder components",
+  "description": "A flexible set of placeholder components",
   "main": "index.js",
   "repository": "https://github.com/mdarche/react-understudy",
   "author": "Mike Darche <mkdarche@gmail.com>",

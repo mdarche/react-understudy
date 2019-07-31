@@ -2,17 +2,16 @@
 import { jsx } from "@emotion/core"
 import Box from "./Box"
 
-const Grid = props => {
-  const {
-    rows = 3,
-    columns = 4,
-    gap = [20, 20],
-    fluid = false,
-    width = 200,
-    height = 200,
-    count,
-  } = props
-
+const Grid = ({
+  rows = 3,
+  columns = 4,
+  gap = [20, 20],
+  fluid = false,
+  width = 200,
+  height = 200,
+  count,
+  ...props
+}) => {
   const columnPartial = fluid
     ? `repeat(auto-fill, minmax(${width}px, 1fr))`
     : `repeat( ${columns},1fr)`
@@ -23,6 +22,7 @@ const Grid = props => {
 
   return (
     <div
+      {...props}
       style={{
         display: "grid",
         gridTemplateColumns: columnPartial,

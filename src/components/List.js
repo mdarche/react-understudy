@@ -2,14 +2,13 @@
 import { jsx } from "@emotion/core"
 import Box from "./Box"
 
-const List = props => {
-  const {
-    border = true,
-    borderColor = "gainsboro",
-    padding,
-    margin,
-    count = 10,
-  } = props
+const List = ({
+  border = true,
+  borderColor = "gainsboro",
+  padding,
+  margin,
+  count = 10,
+}) => {
   return (
     <ul
       css={{

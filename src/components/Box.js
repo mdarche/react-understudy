@@ -4,7 +4,7 @@ import { jsx } from "@emotion/core"
 const Box = ({ height, width, mb, background, responsive, ...props }) => {
   const mqPartial = responsive
     ? {
-        ["@media (maxWidth: 40em)"]: {
+        "@media (maxWidth: 40em)": {
           width: "100%",
         },
       }
@@ -12,7 +12,7 @@ const Box = ({ height, width, mb, background, responsive, ...props }) => {
 
   return (
     <div
-      css={{
+      style={{
         background: background || "gainsboro",
         width: width || "100%",
         height: height || 200,

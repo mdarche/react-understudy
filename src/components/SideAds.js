@@ -2,11 +2,10 @@
 import { jsx } from "@emotion/core"
 import Box from "./Box"
 
-const SideAds = props => {
-  const { count = 2, marginBottom = 40, adHeights = [600, 250] } = props
+const SideAds = ({ count = 2, marginBottom = 40, adHeights }) => {
   const sizes = [200, 250, 600]
 
-  if (props.adHeights) {
+  if (adHeights) {
     return adHeights.map(height => (
       <Box key={height} height={height} mb={marginBottom} />
     ))

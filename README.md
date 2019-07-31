@@ -22,14 +22,15 @@ yarn add react-understudy
 
 ## Component Library
 
-| Component     | Description                                                                   |
-| ------------- | ----------------------------------------------------------------------------- |
-| **Box**       | The basic understudy building block component                                 |
-| **Grid**      | A grid of Boxes that can be configured for sizing & responsiveness            |
-| **List**      | A basic unordered list that includes an optional number of lines              |
-| **Paragraph** | A text block that randomly generates lines based on a range input             |
-| **BlogPost**  | A specified number of Paragraphs with an optional blog header image           |
-| **SideAds**   | A collection of Boxes for the Sidebar that replicates Google Adsense ad sizes |
+| Component     | Description                                                                    |
+| ------------- | ------------------------------------------------------------------------------ |
+| **Box**       | The basic understudy building block component                                  |
+| **Grid**      | A grid of Boxes that can be configured for sizing & responsiveness             |
+| **List**      | A basic unordered list that includes an optional number of lines               |
+| **Paragraph** | A text block that randomly generates lines based on a range input              |
+| **BlogPost**  | A specified number of Paragraphs with an optional blog header image            |
+| **SideAds**   | A collection of Boxes for the Sidebar that replicates Google Adsense ad sizes  |
+| **IconBar**   | An array or a single icon component. Supports common UI icons and social media |
 
 ## Usage
 

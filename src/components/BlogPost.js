@@ -3,9 +3,7 @@ import { jsx } from "@emotion/core"
 import Box from "./Box"
 import Paragraph from "./Paragraph"
 
-const BlogPost = props => {
-  const { image = true, imageHeight = 350, paragraphs = 4 } = props
-
+const BlogPost = ({ image = true, imageHeight = 350, paragraphs = 4 }) => {
   return (
     <div>
       {image ? <Box height={imageHeight} mb={60} /> : null}
