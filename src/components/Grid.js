@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 
 const Grid = ({
@@ -12,6 +11,7 @@ const Grid = ({
   count,
   ...props
 }) => {
+  const totalBoxes = count ? count : columns * rows
   const columnPartial = fluid
     ? `repeat(auto-fill, minmax(${width}px, 1fr))`
     : `repeat( ${columns},1fr)`
@@ -29,7 +29,7 @@ const Grid = ({
         ...gapPartial,
       }}
     >
-      {Array.from(Array(count ? count : columns * rows)).map((e, i) => (
+      {[...Array(totalBoxes)].map((_, i) => (
         <Box key={i} height={height} width={width} mb="0" />
       ))}
     </div>

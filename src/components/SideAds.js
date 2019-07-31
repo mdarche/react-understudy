@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "@emotion/core"
+import React from "react"
 import Box from "./Box"
 
 const SideAds = ({ count = 2, marginBottom = 40, adHeights }) => {

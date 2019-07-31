@@ -2,13 +2,30 @@
   "name": "react-understudy",
   "version": "0.0.5",
   "description": "A flexible set of placeholder components",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/mdarche/react-understudy",
   "author": "Mike Darche <mkdarche@gmail.com>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+  },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.14",
+    "babel-plugin-transform-remove-strict-mode": "^0.0.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "react": "^16.8.6"
   }
 }
