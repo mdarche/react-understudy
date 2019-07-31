@@ -1,6 +1,6 @@
 {
   "name": "react-understudy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A flexible set of placeholder components",
   "main": "index.js",
   "repository": "https://github.com/mdarche/react-understudy",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
