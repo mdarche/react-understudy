@@ -1,6 +1,6 @@
 {
   "name": "react-understudy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A flexible set of placeholder components",
   "main": "index.js",
   "repository": "https://github.com/mdarche/react-understudy",
@@ -8,7 +8,6 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@emotion/core": "^10.0.14",
     "react": "^16.8.6"
   }
 }
